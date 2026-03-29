@@ -12,3 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     slider.scrollBy({ left: -270, behavior: "smooth" });
   });
 });
+
+function toggleMenu() {
+  document.querySelector(".menu").classList.toggle("active");
+}

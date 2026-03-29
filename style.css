@@ -303,7 +303,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 10;
+  z-index: 999;
 }
 
 .prev {
@@ -440,9 +440,6 @@ body {
   color: #bbb;
 }
 
-/* ============================= */
-/* RESPONSIVE DESIGN */
-/* ============================= */
 
 /* TABLET */
 @media (max-width: 1024px) {
@@ -578,5 +575,28 @@ body {
     font-size: 12px;
   }
 
+}
+
+.menu {
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    background: #2f3b63;
+    width: 100%;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+  }
 }
 
